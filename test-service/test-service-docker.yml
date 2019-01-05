@@ -1,0 +1,16 @@
+spring:
+ cloud:
+  config:
+   uri: http://${CONFIG_SERVER_NAME}:${CONFIG_SERVER_PORT}
+
+ 
+
+eureka: 
+ serviceUrl: 
+  default: http://${EUREKA_SERVER_NAME}:8761/eureka/
+
+management:
+ endpoints:
+  web:
+   exposure:
+     include: "*"

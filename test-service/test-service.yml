@@ -1,0 +1,16 @@
+spring:
+ cloud:
+  config:
+   uri: http://localhost:14014
+
+ 
+
+eureka: 
+ serviceUrl: 
+  default: http://localhost:8761/eureka/
+
+management:
+ endpoints:
+  web:
+   exposure:
+     include: "*"

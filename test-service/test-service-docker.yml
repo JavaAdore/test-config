@@ -7,7 +7,7 @@ spring:
 
 eureka: 
  serviceUrl: 
-  default: http://${EUREKA_SERVER_NAME}:8761/eureka/
+  default: http://${EUREKA_SERVER_NAME}:${EUREKA_SERVER_PORT}/eureka/
 
 management:
  endpoints:

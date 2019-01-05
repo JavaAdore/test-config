@@ -3,10 +3,11 @@ spring:
   config:
    uri: http://${CONFIG_SERVER_NAME}:${CONFIG_SERVER_PORT}
 
-
 eureka:
  client:
   registerWithEureka: false
   fetchRegistry: false
   serviceUrl:
    defaultZone: http://${EUREKA_SERVER_NAME}:${EUREKA_SERVER_PORT}/eureka/
+ instance:
+  preferIpAddress: true

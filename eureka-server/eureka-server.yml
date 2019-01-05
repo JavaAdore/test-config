@@ -1,6 +1,6 @@
  cloud:
   config:
-   uri: http://localhost:14014
+   uri: http://${CONFIG_SERVER_NAME}:${CONFIG_SERVER_PORT}
 
 
 eureka:
@@ -9,3 +9,5 @@ eureka:
   fetchRegistry: false
   serviceUrl:
    defaultZone: http://localhost:8761/eureka/
+ instance:
+  preferIpAddress: true

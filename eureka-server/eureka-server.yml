@@ -1,9 +1,5 @@
- cloud:
-  config:
-   uri: http://${CONFIG_SERVER_IP}:${CONFIG_SERVER_PORT}
-
-
-
+server:
+ port: ${EUREKA_SERVER_PORT}
 eureka:
   instance:
     hostname: localhost

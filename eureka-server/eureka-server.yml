@@ -3,9 +3,5 @@
    uri: http://${CONFIG_SERVER_IP}:${CONFIG_SERVER_PORT}
 
 
-eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+
+

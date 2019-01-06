@@ -1,13 +1,13 @@
-spring:
  cloud:
   config:
-   uri: http://${CONFIG_SERVER_NAME}:${CONFIG_SERVER_PORT}
+   uri: http://${CONFIG_SERVER_IP}:${CONFIG_SERVER_PORT}
+
 
 eureka:
- client:
-  register-with-eureka: false
-  fetch-registry: false
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
   serviceUrl:
-   defaultZone: http://${EUREKA_SERVER_NAME}:${EUREKA_SERVER_PORT}/eureka/
- instance:
-  preferIpAddress: true
+   defaultZone: http://${EUREKA_SERVER_IP}:${EUREKA_SERVER_PORT}/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
